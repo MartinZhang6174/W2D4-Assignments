@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,69 +16,61 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bucket.png" translatesAutoresizingMaskIntoConstraints="NO" id="9ba-Tl-WHG">
-                                <rect key="frame" x="31" y="468" width="100" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="BDZ-WB-ECs"/>
-                                    <constraint firstAttribute="width" constant="100" id="TfS-fJ-QJu"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9xy-aj-V3z">
-                                <rect key="frame" x="20" y="134" width="280" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="I6x-Nt-vjn"/>
-                                    <constraint firstAttribute="width" constant="280" id="qod-YZ-Rjg"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="aOQ-NB-6PA">
-                                <rect key="frame" x="56" y="470" width="44" height="38"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DiV-vF-dA2">
+                                <rect key="frame" x="37" y="27" width="300" height="280"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="f8e-X1-dEW"/>
-                                    <constraint firstAttribute="width" constant="44" id="m2W-3w-2VE"/>
+                                    <constraint firstAttribute="height" constant="280" id="Fhb-Ac-10s"/>
+                                    <constraint firstAttribute="width" constant="300" id="VX8-fL-Y28"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="LVf-34-qoW">
+                                <rect key="frame" x="33" y="500.5" width="75" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="KeL-Mr-eLK"/>
+                                    <constraint firstAttribute="width" constant="75" id="dtV-WN-VTL"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="9xy-aj-V3z" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="7fN-yv-y9Z"/>
-                            <constraint firstItem="9xy-aj-V3z" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="CcX-6r-dcc"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9ba-Tl-WHG" secondAttribute="bottom" constant="50" id="Rty-bT-xr5"/>
-                            <constraint firstItem="aOQ-NB-6PA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="450" id="b5J-BR-Ojr"/>
-                            <constraint firstItem="aOQ-NB-6PA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="htL-Sq-KpG"/>
-                            <constraint firstItem="9ba-Tl-WHG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="qul-K5-eXc"/>
+                            <constraint firstItem="DiV-vF-dA2" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ap0-Fs-TiA"/>
+                            <constraint firstItem="DiV-vF-dA2" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.5" id="HXy-7j-ycX"/>
+                            <constraint firstItem="LVf-34-qoW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="17" id="cRQ-he-Lbp"/>
+                            <constraint firstItem="LVf-34-qoW" firstAttribute="top" secondItem="DiV-vF-dA2" secondAttribute="bottom" multiplier="1.5" constant="40" id="vvc-iR-Ens"/>
                         </constraints>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="lLr-9T-E1f" appends="YES" id="ZPL-D8-Zkv"/>
-                            <outletCollection property="gestureRecognizers" destination="IcU-c5-jar" appends="YES" id="ZKZ-Hf-sk8"/>
+                            <outletCollection property="gestureRecognizers" destination="tT9-Ma-Rc7" appends="YES" id="q6F-kV-c5L"/>
+                            <outletCollection property="gestureRecognizers" destination="Bn5-3H-yKE" appends="YES" id="eKD-dC-zXp"/>
                         </connections>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="appleImageView" destination="aOQ-NB-6PA" id="ap5-z1-2ik"/>
-                        <outlet property="petImageView" destination="9xy-aj-V3z" id="SIH-BE-qzk"/>
+                        <outlet property="appleView" destination="LVf-34-qoW" id="NhG-vp-V6s"/>
+                        <outlet property="petImageView" destination="DiV-vF-dA2" id="Qnj-s2-51Q"/>
+                        <outlet property="petPicView" destination="DiV-vF-dA2" id="7fI-Wv-SZu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="lLr-9T-E1f">
+                <pinchGestureRecognizer id="tT9-Ma-Rc7">
                     <connections>
-                        <action selector="pettingPanGesture:" destination="vXZ-lx-hvc" id="Evd-5F-Fft"/>
-                    </connections>
-                </panGestureRecognizer>
-                <pinchGestureRecognizer id="IcU-c5-jar">
-                    <connections>
-                        <action selector="pinchingAppleGesture:" destination="vXZ-lx-hvc" id="xz1-DL-ld8"/>
+                        <action selector="pinchGesture:" destination="vXZ-lx-hvc" id="5Ah-jo-6PZ"/>
                     </connections>
                 </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Bn5-3H-yKE">
+                    <connections>
+                        <action selector="panGesture:" destination="vXZ-lx-hvc" id="Amx-cd-2zm"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="325" y="364"/>
+            <point key="canvasLocation" x="324.5" y="372.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="apple.png" width="515" height="576"/>
-        <image name="bucket.png" width="273" height="297"/>
     </resources>
 </document>

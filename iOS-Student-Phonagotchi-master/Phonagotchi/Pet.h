@@ -10,10 +10,9 @@
 
 @interface Pet : NSObject
 
-@property (nonatomic, readonly) BOOL isGrumpyOrNot;
-@property (nonatomic) UIImage *petImage;
+@property BOOL isGrumpyOrNot;
+@property UIImage *petImage;
 
-- (void) gettingPettingVelocity:(CGPoint)pettingVelocity;
-
+- (void)gettingGestureVelocity:(CGPoint)gestureVelocity;
 
 @end

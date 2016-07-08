@@ -10,18 +10,12 @@
 
 @implementation Pet
 
-//- (IBAction):(id)sender)
-
-- (void) gettingPettingVelocity:(CGPoint)pettingVelocity
-{
-    if (pettingVelocity.x > 700 || pettingVelocity.x < -700) {
-        _isGrumpyOrNot = true;
+- (void) gettingGestureVelocity:(CGPoint)gestureVelocity {
+    if (gestureVelocity.x > 500 || gestureVelocity.x < -500) {
         self.petImage = [UIImage imageNamed:@"grumpy"];
     } else {
-        _isGrumpyOrNot = false;
-        self.petImage = [UIImage imageNamed:@"default"];
+        self.petImage = [UIImage imageNamed:@"sleeping"];
     }
 }
-
 
 @end
